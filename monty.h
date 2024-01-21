@@ -43,9 +43,9 @@ extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 /*file operations*/
-void open_fil(char *fil_name);
+void open_file(char *file_name);
 int parse_line(char *buffer, int line_number, int format);
-void read_fil(FILE *);
+void read_file(FILE *);
 int len_chars(FILE *);
 void find_func(char *, char *, int, int);
 
@@ -76,9 +76,9 @@ void print_str(stack_t **, unsigned int);
 void rotl(stack_t **, unsigned int);
 
 /*Error hanlding*/
-void err(int error_code, ...);
-void more_err(int error_code, ...);
-void string_err(int error_code, ...);
+void erro(int error_code, ...);
+void more_erro(int error_code, ...);
+void string_erro(int error_code, ...);
 void rotr(stack_t **, unsigned int);
 
 #endif
